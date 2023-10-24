@@ -1,0 +1,35 @@
+/* login.component.scss */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This centers the content both horizontally and vertically. */
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+
+    .p-inputgroup {
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}
+.error-message {
+  color: red; /* Set the text color to red */
+  font-size: 12px; /* Adjust the font size as needed */
+  margin-top: 5px; /* Add some space between the input field and the error message */
+}
