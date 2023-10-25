@@ -3,9 +3,13 @@
 <div class="layout">
   <router-outlet name="header">
     <app-navbar></app-navbar>
-    <div class="content">
-    <app-home></app-home>
-    <app-announcements></app-announcements>
-    </div>
+
+      <div class="container">
+        <div class="component1"><app-announcements></app-announcements></div>
+        <div class="component2"><app-home></app-home></div>
+      </div>
+
+
+
   </router-outlet>
 </div>

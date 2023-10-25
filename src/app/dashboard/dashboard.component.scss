@@ -14,4 +14,23 @@
   padding: 20px;
 }
 
+.container {
+  display: flex;
+  height: 100vh; // Set the container to the full viewport height
+}
+
+.component1 {
+  flex: 30%; // Set the first component to take up 30% of the available space
+  background-color: #e3e3e3; // Just for visual distinction
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.component2 {
+  flex: 70%; // Set the second component to take up 70% of the available space
+  background-color: #f1f1f1; // Just for visual distinction
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 /* Style the 'header' and 'sidebar' outlets as needed */
