@@ -1,9 +1,11 @@
 
 <p>dashboard</p>
 <div class="layout">
-  <router-outlet name="header"></router-outlet>
-  <div class="content">
-    <router-outlet name="primary"></router-outlet>
-    <router-outlet name="sidebar"></router-outlet>
-  </div>
+  <router-outlet name="header">
+    <app-navbar></app-navbar>
+    <div class="content">
+    <app-home></app-home>
+    <app-announcements></app-announcements>
+    </div>
+  </router-outlet>
 </div>

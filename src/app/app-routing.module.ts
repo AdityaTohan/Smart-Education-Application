@@ -9,13 +9,13 @@ import {AnnouncementsComponent} from "./dashboard/announcements/announcements.co
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: 'dashboard',component: DashboardComponent },
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},
-  { path: '', component: NavbarComponent, outlet: 'header' },
-  { path: '', component: HomeComponent, outlet: 'primary' },
-  { path: 'home', component: AnnouncementsComponent, outlet: 'sidebar' }
+  { path: 'navbar', component: NavbarComponent, outlet: 'header' },
+  { path: 'home', component: HomeComponent, outlet: 'primary' },
+  { path: 'announcement', component: AnnouncementsComponent, outlet: 'sidebar' }
 ];
 
 @NgModule({
