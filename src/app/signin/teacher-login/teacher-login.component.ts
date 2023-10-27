@@ -16,7 +16,7 @@ export class TeacherLoginComponent {
     }
   }
   onClick(){
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/teacher-dashboard']);
   }
 
 }
