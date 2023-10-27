@@ -40,6 +40,8 @@ import { TeacherParentComponent } from './teacher-dashboard/feedback/teacher-par
 import { TeacherStudentMeetComponent } from './teacher-dashboard/meeting/teacher-student-meet/teacher-student-meet.component';
 import { TeacherParentMeetComponent } from './teacher-dashboard/meeting/teacher-parent-meet/teacher-parent-meet.component';
 import { AnnouncementCreationComponent } from './teacher-dashboard/announcement-creation/announcement-creation.component';
+import {FileUploadModule} from "primeng/fileupload";
+
 
 
 
@@ -66,7 +68,7 @@ import { AnnouncementCreationComponent } from './teacher-dashboard/announcement-
     TeacherParentComponent,
     TeacherStudentMeetComponent,
     TeacherParentMeetComponent,
-    AnnouncementCreationComponent
+    AnnouncementCreationComponent,
   ],
   imports: [
     BrowserModule,
@@ -89,6 +91,8 @@ import { AnnouncementCreationComponent } from './teacher-dashboard/announcement-
     MenubarModule,
     CardModule,
     ScrollPanelModule,
+    FileUploadModule,
+
 
   ],
   providers: [],
