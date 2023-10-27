@@ -22,13 +22,15 @@ import {DividerModule} from "primeng/divider";
 import {PasswordModule} from "primeng/password";
 import { LoginComponent } from './signin/login/login.component';
 import { SignupComponent } from './signin/signup/signup.component';
-import { NavbarComponent } from './dashboard/navbar/navbar.component';
 import { AnnouncementsComponent } from './dashboard/announcements/announcements.component';
 import { HomeComponent } from './dashboard/home/home.component';
 import {ScrollPanelModule} from "primeng/scrollpanel";
 import { GradesComponent } from './dashboard/grades/grades.component';
 import { FeedbackComponent } from './dashboard/feedback/feedback.component';
-import { MeetingComponent } from './meeting/meeting.component';
+import { TeacherDashboardComponent } from './teacher-dashboard/teacher-dashboard.component';
+import { MeetTeachersComponent } from './dashboard/meet-teachers/meet-teachers.component';
+import { WelcomeComponent } from './dashboard/welcome/welcome.component';
+
 
 
 
@@ -38,12 +40,13 @@ import { MeetingComponent } from './meeting/meeting.component';
     DashboardComponent,
     LoginComponent,
     SignupComponent,
-    NavbarComponent,
     AnnouncementsComponent,
     HomeComponent,
     GradesComponent,
     FeedbackComponent,
-    MeetingComponent
+    TeacherDashboardComponent,
+    MeetTeachersComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
