@@ -1,1 +1,41 @@
-<p>teacher-dashboard works!</p>
+
+<div class="layout">
+
+  <router-outlet>
+    <div class="container">
+      <div class="component1">
+        <div class="navbar">
+          <ul class="menu">
+            <li *ngFor="let menuItem of menuItems; let i = index;">
+              <a (click)="toggleSubItems(i);onClick(menuItem.id)">
+                {{ menuItem.title }}
+                <span *ngIf="menuItem.subItems.length > 0" [class]="menuItem.showSubItems ? 'arrow up' : 'arrow down'"></span>
+              </a>
+              <ul *ngIf="menuItem.showSubItems">
+                <li *ngFor="let subItem of menuItem.subItems" >
+                  <a (click)="onClick(subItem.id)">{{ subItem.title }}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="component2">
+        <div *ngIf="pageId == ''"><app-welcome></app-welcome></div>
+        <div *ngIf="pageId == 'upload-content' "><app-upload-content></app-upload-content></div>
+        <div *ngIf="pageId == 'view-content' "><app-view-content></app-view-content></div>
+        <div *ngIf="pageId == 'create-quiz' "><app-create-quiz></app-create-quiz></div>
+        <div *ngIf="pageId == 'view-student' "><app-view-student></app-view-student></div>
+        <div *ngIf="pageId == 'student-feedback' "><app-teacher-student></app-teacher-student></div>
+        <div *ngIf="pageId == 'parent-feedback' "><app-teacher-parent></app-teacher-parent></div>
+        <div *ngIf="pageId == 'meet-student' "><app-teacher-student-meet></app-teacher-student-meet></div>
+        <div *ngIf="pageId == 'meet-parent' "><app-teacher-parent-meet></app-teacher-parent-meet></div>
+        <div *ngIf="pageId == 'announcements' "><app-announcement-creation></app-announcement-creation></div>
+
+      </div>
+    </div>
+
+  </router-outlet>
+</div>
+
+

@@ -1,0 +1,21 @@
+<div class="form-container">
+  <h2>Add Content</h2>
+  <form (ngSubmit)="submitForm()" #contentForm="ngForm">
+    <div class="form-group">
+      <label for="title">Add Title:</label>
+      <input type="text" id="title" name="title" [(ngModel)]="content.title" required>
+    </div>
+
+    <div class="form-group">
+      <label for="file">Add pdf/slides:</label>
+      <input type="file" id="file" name="file" (change)="onFileChange($event)" required>
+    </div>
+
+    <div class="form-group">
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" [(ngModel)]="content.comments"></textarea>
+    </div>
+
+    <button type="submit" [disabled]="!contentForm.form.valid || !fileSelected">Upload</button>
+  </form>
+</div>
