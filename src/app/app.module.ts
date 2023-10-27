@@ -21,7 +21,6 @@ import {SpeedDialModule} from "primeng/speeddial";
 import {DividerModule} from "primeng/divider";
 import {PasswordModule} from "primeng/password";
 import { LoginComponent } from './signin/login/login.component';
-import { SignupComponent } from './signin/signup/signup.component';
 import { AnnouncementsComponent } from './dashboard/announcements/announcements.component';
 import { HomeComponent } from './dashboard/home/home.component';
 import {ScrollPanelModule} from "primeng/scrollpanel";
@@ -30,6 +29,8 @@ import { FeedbackComponent } from './dashboard/feedback/feedback.component';
 import { TeacherDashboardComponent } from './teacher-dashboard/teacher-dashboard.component';
 import { MeetTeachersComponent } from './dashboard/meet-teachers/meet-teachers.component';
 import { WelcomeComponent } from './dashboard/welcome/welcome.component';
+import { SelectionComponent } from './selection/selection.component';
+import { TeacherLoginComponent } from './signin/teacher-login/teacher-login.component';
 
 
 
@@ -39,14 +40,15 @@ import { WelcomeComponent } from './dashboard/welcome/welcome.component';
     AppComponent,
     DashboardComponent,
     LoginComponent,
-    SignupComponent,
     AnnouncementsComponent,
     HomeComponent,
     GradesComponent,
     FeedbackComponent,
     TeacherDashboardComponent,
     MeetTeachersComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    SelectionComponent,
+    TeacherLoginComponent
   ],
   imports: [
     BrowserModule,

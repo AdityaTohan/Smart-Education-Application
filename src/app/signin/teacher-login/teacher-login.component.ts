@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+  selector: 'app-teacher-login',
+  templateUrl: './teacher-login.component.html',
+  styleUrls: ['./teacher-login.component.scss']
 })
-export class LoginComponent {
-
+export class TeacherLoginComponent {
   userName: string = '';
   studentID: string= '';
   constructor(private router: Router) {}
