@@ -31,6 +31,17 @@ import { MeetTeachersComponent } from './dashboard/meet-teachers/meet-teachers.c
 import { WelcomeComponent } from './dashboard/welcome/welcome.component';
 import { SelectionComponent } from './selection/selection.component';
 import { TeacherLoginComponent } from './signin/teacher-login/teacher-login.component';
+import { ContentCreationComponent } from './teacher-dashboard/view-content/content-creation.component';
+import { UploadContentComponent } from './teacher-dashboard/upload-content/upload-content.component';
+import { CreateQuizComponent } from './teacher-dashboard/create-quiz/create-quiz.component';
+import { ViewStudentComponent } from './teacher-dashboard/view-student/view-student.component';
+import { TeacherStudentComponent } from './teacher-dashboard/feedback/teacher-student/teacher-student.component';
+import { TeacherParentComponent } from './teacher-dashboard/feedback/teacher-parent/teacher-parent.component';
+import { TeacherStudentMeetComponent } from './teacher-dashboard/meeting/teacher-student-meet/teacher-student-meet.component';
+import { TeacherParentMeetComponent } from './teacher-dashboard/meeting/teacher-parent-meet/teacher-parent-meet.component';
+import { AnnouncementCreationComponent } from './teacher-dashboard/announcement-creation/announcement-creation.component';
+import {FileUploadModule} from "primeng/fileupload";
+
 
 
 
@@ -48,7 +59,16 @@ import { TeacherLoginComponent } from './signin/teacher-login/teacher-login.comp
     MeetTeachersComponent,
     WelcomeComponent,
     SelectionComponent,
-    TeacherLoginComponent
+    TeacherLoginComponent,
+    ContentCreationComponent,
+    UploadContentComponent,
+    CreateQuizComponent,
+    ViewStudentComponent,
+    TeacherStudentComponent,
+    TeacherParentComponent,
+    TeacherStudentMeetComponent,
+    TeacherParentMeetComponent,
+    AnnouncementCreationComponent,
   ],
   imports: [
     BrowserModule,
@@ -71,6 +91,8 @@ import { TeacherLoginComponent } from './signin/teacher-login/teacher-login.comp
     MenubarModule,
     CardModule,
     ScrollPanelModule,
+    FileUploadModule,
+
 
   ],
   providers: [],

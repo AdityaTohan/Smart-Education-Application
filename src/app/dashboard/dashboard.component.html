@@ -12,17 +12,18 @@
             <li><app-announcements></app-announcements></li>
           </ul>
         </nav>
+      </div>
 
-<!--        <div class="component1"><app-announcements></app-announcements>--></div>
-        <div class="component2">
-          <div *ngIf="pageId == ''"><app-welcome></app-welcome></div>
-          <div *ngIf="pageId == 'content' "><app-home></app-home></div>
-          <div *ngIf="pageId == 'grades' "><app-grades></app-grades></div>
-          <div *ngIf="pageId == 'feedback' "><app-feedback></app-feedback></div>
-          <div *ngIf="pageId == 'meetTeachers' "><app-meet-teachers></app-meet-teachers></div>
-          <div *ngIf="pageId == 'announcements' "><app-announcements></app-announcements></div>
+      <div class="component2">
+        <div *ngIf="pageId == ''"><app-welcome></app-welcome></div>
+        <div *ngIf="pageId == 'content' "><app-home></app-home></div>
+        <div *ngIf="pageId == 'grades' "><app-grades></app-grades></div>
+        <div *ngIf="pageId == 'feedback' "><app-feedback></app-feedback></div>
+        <div *ngIf="pageId == 'meetTeachers' "><app-meet-teachers></app-meet-teachers></div>
+        <div *ngIf="pageId == 'announcements' "><app-announcements></app-announcements></div>
 
-        </div>
+      </div>
+
       </div>
 
   </router-outlet>
