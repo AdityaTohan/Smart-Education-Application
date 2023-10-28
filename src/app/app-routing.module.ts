@@ -2,20 +2,28 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {LoginComponent} from "./signin/login/login.component";
-import {SignupComponent} from "./signin/signup/signup.component";
-import {NavbarComponent} from "./dashboard/navbar/navbar.component";
 import {HomeComponent} from "./dashboard/home/home.component";
 import {AnnouncementsComponent} from "./dashboard/announcements/announcements.component";
+import {FeedbackComponent} from "./dashboard/feedback/feedback.component";
+import {GradesComponent} from "./dashboard/grades/grades.component";
+import {MeetTeachersComponent} from "./dashboard/meet-teachers/meet-teachers.component";
+import {SelectionComponent} from "./selection/selection.component";
+import {TeacherLoginComponent} from "./signin/teacher-login/teacher-login.component";
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: 'selection', pathMatch: 'full' },
   { path: 'dashboard',component: DashboardComponent },
+  { path: 'selection', component: SelectionComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'signup', component: SignupComponent},
-  { path: 'navbar', component: NavbarComponent, outlet: 'header' },
-  { path: 'home', component: HomeComponent, outlet: 'primary' },
-  { path: 'announcement', component: AnnouncementsComponent, outlet: 'sidebar' }
+  { path: 'teacher-login', component: TeacherLoginComponent},
+  { path: 'content', component: HomeComponent},
+  { path: 'announcements', component: AnnouncementsComponent},
+  { path: 'feedback', component: FeedbackComponent},
+  { path: 'grades', component: GradesComponent},
+  { path: 'meet-teachers', component: MeetTeachersComponent},
+
+
 ];
 
 @NgModule({

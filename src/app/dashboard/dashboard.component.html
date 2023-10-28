@@ -1,12 +1,30 @@
 
 <div class="layout">
-  <router-outlet name="header">
-    <app-navbar></app-navbar>
 
-      <div class="container">
-        <div class="component1"><app-announcements></app-announcements></div>
-        <div class="component2"><app-home></app-home></div>
+  <router-outlet>
+    <div class="container">
+      <div class="component1">
+        <nav class="vertical-navbar">
+          <ul>
+            <li *ngFor="let item of paths">
+              <a class="a-dashboard-c1"  (click)="onClick(item.id)">{{ item.label }}</a>
+            </li>
+            <li><app-announcements></app-announcements></li>
+          </ul>
+        </nav>
+
+<!--        <div class="component1"><app-announcements></app-announcements>--></div>
+        <div class="component2">
+          <div *ngIf="pageId == ''"><app-welcome></app-welcome></div>
+          <div *ngIf="pageId == 'content' "><app-home></app-home></div>
+          <div *ngIf="pageId == 'grades' "><app-grades></app-grades></div>
+          <div *ngIf="pageId == 'feedback' "><app-feedback></app-feedback></div>
+          <div *ngIf="pageId == 'meetTeachers' "><app-meet-teachers></app-meet-teachers></div>
+          <div *ngIf="pageId == 'announcements' "><app-announcements></app-announcements></div>
+
+        </div>
       </div>
 
   </router-outlet>
 </div>
+

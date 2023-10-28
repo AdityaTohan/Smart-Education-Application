@@ -1,29 +1,60 @@
-/* styles.scss */
-
 .layout {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
 }
 
 .container {
   display: flex;
-  height: 100vh; // Set the container to the full viewport height
+  height: 100vh;
 }
 
 .component1 {
-  flex: 30%; // Set the first component to take up 30% of the available space
-  background-color: #e3e3e3; // Just for visual distinction
-  padding: 20px;
+  flex: 30%;
+  background-color: #FFE7DE;
   box-sizing: border-box;
+  font-weight: bold;
 }
+
 
 .component2 {
-  flex: 70%; // Set the second component to take up 70% of the available space
-  background-color: #f1f1f1; // Just for visual distinction
+  flex: 70%;
+  background-color: #FFF5F4;
   padding: 20px;
   box-sizing: border-box;
 }
 
-/* Style the 'header' and 'sidebar' outlets as needed */
+
+.vertical-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+
+    a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+    }
+  }
+  .a-dashboard-c1:hover{
+    background-color: #E4E4E4;
+    font-size: 17px;
+    padding: 12px;
+  }
+  .a-dashboard-c1:current{
+    background-color: aqua;
+    font-size: 17px;
+    padding: 12px;
+  }
+}
+
