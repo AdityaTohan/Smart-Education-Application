@@ -11,7 +11,7 @@
 }
 .component1 {
   flex: 20%;
-  background-color: #e3e3e3;
+  background-color: #FFE7DE;
   box-sizing: border-box;
 }
 
@@ -25,7 +25,7 @@
 
 .navbar {
 
-  //width: 250px;
+  width:fit-content;
   height: 100%;
   position: fixed;
   display: flex;
@@ -33,7 +33,13 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  padding: 20px;
+  padding: 0px 20px;
+}
+
+.logo{
+    width:100%;
+    height: auto;
+    padding: 10px;
 }
 
 .menu {
@@ -43,7 +49,8 @@
 }
 
 .menu li {
-  padding: 10px 0;
+  padding: 10px;
+  width:max-content;
 }
 
 .menu a {
@@ -54,7 +61,7 @@
 }
 
 .menu a:hover {
-  background-color: #e3e3e3;
+  background-color: aqua;
   transition: background-color 0.3s;
 }
 
@@ -63,8 +70,8 @@
 }
 
 .menu ul {
+    width: max-content;
   list-style-type: none;
-  padding: 0;
   margin: 0;
   margin-left: 20px;
 }

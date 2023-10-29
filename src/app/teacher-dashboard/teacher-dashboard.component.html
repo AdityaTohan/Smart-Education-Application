@@ -4,7 +4,9 @@
   <router-outlet>
     <div class="container">
       <div class="component1">
+        <img src="assets/Logo.png" class="logo">
         <div class="navbar">
+            
           <ul class="menu">
             <li *ngFor="let menuItem of menuItems; let i = index;">
               <a (click)="toggleSubItems(i);onClick(menuItem.id)">
